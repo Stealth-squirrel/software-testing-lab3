@@ -27,22 +27,3 @@ class TestCalculateCommission:
         """Негативные тесты: передача нечислового значения."""
         with pytest.raises(TypeError):
             calculate_commission(invalid_type)
-
-    # # Отдельные тесты для граничных значений )
-    # def test_boundary_100(self):
-    #     assert calculate_commission(100) == 50.0
-
-    # def test_boundary_1000(self):
-    #     assert calculate_commission(1000) == 50.0
-
-    # def test_boundary_1001(self):
-    #     assert calculate_commission(1001) == 100.0
-
-    # def test_boundary_20000(self):
-    #     assert calculate_commission(20000) == 100.0
-
-    # def test_boundary_20001(self):
-    #     assert calculate_commission(20001) == pytest.approx(400.01)
-
-    # def test_boundary_50000(self):
-    #     assert calculate_commission(50000) == 500.0
